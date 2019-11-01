@@ -28,6 +28,9 @@ init()
         if(playing == true){
         dice = Math.floor(Math.random() * 6) + 1;
         dice2 = Math.floor(Math.random() * 6) + 1;
+        console.log(dice, dice2)
+        
+        count++
         document.querySelector('.dice').style.display = 'block';
         document.querySelector('.dice2').style.display = 'block';
         document.querySelector('.dice').src = '/res/dice-' + dice + '.png';
@@ -36,7 +39,8 @@ init()
         if(dice == 6 && dice2 == 6){
             roundScore = 0;
             scores[playerActive] = 0
-            document.querySelector('#current-' + playerActive).textContent = roundScore;
+            document.querySelector('#current-' + playerActive).textContent = scores[playerActive];
+            document.querySelector('#score-' + playerActive).textContent = scores[playerActive];
             document.querySelector('.player-' + playerActive + '-panel').classList.remove('active');
             playerActive == 0 ? playerActive = 1 : playerActive = 0;
             document.querySelector('.dice').style.display = 'none';
