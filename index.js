@@ -30,11 +30,10 @@ init()
         dice2 = Math.floor(Math.random() * 6) + 1;
         console.log(dice, dice2)
         
-        count++
         document.querySelector('.dice').style.display = 'block';
         document.querySelector('.dice2').style.display = 'block';
-        document.querySelector('.dice').src = '/res/dice-' + dice + '.png';
-        document.querySelector('.dice2').src = '/res/dice-' + dice2 + '.png';
+        document.querySelector('.dice').src = '/assets/dice-' + dice + '.png';
+        document.querySelector('.dice2').src = '/assets/dice-' + dice2 + '.png';
         
         if(dice == 6 && dice2 == 6){
             roundScore = 0;
