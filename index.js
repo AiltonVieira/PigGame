@@ -32,8 +32,8 @@ init()
         
         document.querySelector('.dice').style.display = 'block';
         document.querySelector('.dice2').style.display = 'block';
-        document.querySelector('.dice').src = 'assets/dice-' + dice + '.png';
-        document.querySelector('.dice2').src = 'assets/dice-' + dice2 + '.png';
+        document.querySelector('.dice').src = 'PigGame/assets/dice-' + dice + '.png';
+        document.querySelector('.dice2').src = 'PigGame/assets/dice-' + dice2 + '.png';
         
         if(dice == 6 && dice2 == 6){
             roundScore = 0;
